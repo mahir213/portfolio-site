@@ -2,6 +2,9 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import Hero from "../components/Hero";
 import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 import Grid from "@/components/Grid";
+import RecentProjects from "@/components/RecentProjects";
+import Approach from "@/components/ui/Approach";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,27 +15,30 @@ export default function Home() {
             {
               name: "Home",
               link: "#",
-              icon: <FaHome />,
+              
             },
             {
               name: "About",
               link: "#about",
-              icon: <FaUser />,
+             
             },
             {
               name: "Projects",
               link: "#projects",
-              icon: <FaProjectDiagram />,
+              
             },
             {
               name: "Contact",
               link: "#contact",
-              icon: <FaEnvelope />,
+             
             },
           ]
         }/>
        <Hero/>
        <Grid/>
+       <RecentProjects/>
+       <Approach/>
+       <Footer/>
        </div>
     </main>
   );
