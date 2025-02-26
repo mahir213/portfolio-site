@@ -1,6 +1,5 @@
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Hero from "../components/Hero";
-import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import Approach from "@/components/ui/Approach";
@@ -15,31 +14,31 @@ export default function Home() {
             {
               name: "Home",
               link: "#",
-              
+
             },
             {
               name: "About",
               link: "#about",
-             
+
             },
             {
               name: "Projects",
               link: "#projects",
-              
+
             },
             {
               name: "Contact",
               link: "#contact",
-             
+
             },
           ]
-        }/>
-       <Hero/>
-       <Grid/>
-       <RecentProjects/>
-       <Approach/>
-       <Footer/>
-       </div>
+        } />
+        <Hero />
+        <Grid />
+        <RecentProjects />
+        <Approach />
+        <Footer />
+      </div>
     </main>
   );
 }

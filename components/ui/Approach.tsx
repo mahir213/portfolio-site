@@ -2,7 +2,6 @@
 
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
 import { CanvasRevealEffect } from "./CanvasRevealEffect";
 
 const Approach = () => {
@@ -19,7 +18,7 @@ const Approach = () => {
           icon={<AceternityIcon order="Phase 1" />}
           des="Laying the foundation for success starts here. We'll outline the vision,  
           set clear goals, and create a strategic roadmap to bring your project to life."
-          
+
         >
           <CanvasRevealEffect
             animationSpeed={5.1}

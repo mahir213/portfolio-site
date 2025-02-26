@@ -1,5 +1,4 @@
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 
@@ -17,10 +16,10 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Let's build something <span className="text-purple">amazing</span> together!
+          Let&apos;s build something <span className="text-purple">amazing</span> together!
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Get in touch today, and let's turn your vision into reality.
+          Get in touch today, and let&apos;s turn your vision into reality.
         </p>
 
         <a href="mailto:hajdarevicm10@gmail.com">
