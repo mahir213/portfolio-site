@@ -85,7 +85,7 @@ jobs:
           cat infrastructure/portfolio/deployment.yml
 
           # Update the image tag in the deployment manifest
-          sed -i "s|image: ghcr.io/portfolio/mahir-portfolio:.*|image: ghcr.io/portfolio/mahir-portfolio:${{ github.sha }}|g" infrastructure/portfolio/mahir-portfolio.yml
+          sed -i "s|image: ghcr.io/portfolio/mahir-portfolio:.*|image: ghcr.io/portfolio/mahir-portfolio:${{ github.sha }}|g" infrastructure/portfolio/deployment.yml
 
           # Print the file content after changes
           echo "After update:"
