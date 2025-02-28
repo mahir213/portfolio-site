@@ -30,7 +30,7 @@ const Approach = () => {
           title="Development & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
           des="With a clear plan in place, development begins. Every step, from initial prototypes  
-to final implementation, is carefully executed while keeping you informed throughout the process."
+        to final implementation, is carefully executed while keeping you informed throughout the process."
 
         >
           <CanvasRevealEffect
@@ -52,7 +52,7 @@ to final implementation, is carefully executed while keeping you informed throug
           title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
           des="Bringing ideas to life! The approved design is transformed into a fully functional  
-website, ensuring a seamless and engaging user experience from start to finish."
+        website, ensuring a seamless and engaging user experience from start to finish."
 
         >
           <CanvasRevealEffect
@@ -186,7 +186,7 @@ const AceternityIcon = ({ order }: { order: string }) => {
   );
 };
 
-export const Icon = ({ className, ...rest }: any) => {
+export const Icon = ({ className, ...rest }: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

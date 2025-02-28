@@ -1,9 +1,7 @@
-
 import { FaLocationArrow } from "react-icons/fa6";
-import  MagicButton  from "./ui/MagicButton";
+import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-
 
 const Hero = () => {
   return (
@@ -55,7 +53,7 @@ const Hero = () => {
 
           <p className="text-center md:tracking-wider
           mb-4 text-sm md:text-lg lg:text:2xl">
-            Hi, I'm Mahir. a full-stack developer with a passion, based in Bosnia and Herzegovina.
+            Hi, I&apos;m Mahir. a full-stack developer with a passion, based in Bosnia and Herzegovina.
           </p>
 
           <a href="#about">
@@ -65,8 +63,8 @@ const Hero = () => {
               position="right"
             />
           </a>
-    </div>
-    </div>
+        </div>
+      </div>
     </div>
   );
 };

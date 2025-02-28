@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from 'next/image';
 
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
@@ -9,8 +10,6 @@ import { cn } from "../../utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "../../data/confetti.json";
 import MagicButton from "../ui/MagicButton";
-
-
 
 export const BentoGrid = ({
   className,
@@ -78,7 +77,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col s...",
         className
       )}
       style={{
@@ -87,14 +86,15 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-     
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute z-0">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
+              layout="fill"
+              objectFit="cover"
             />
           )}
         </div>
@@ -103,10 +103,12 @@ export const BentoGridItem = ({
             } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
               className="object-cover object-center w-full h-full"
+              layout="fill"
+              objectFit="cover"
             />
           )}
         </div>
