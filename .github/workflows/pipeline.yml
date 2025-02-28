@@ -66,7 +66,7 @@ jobs:
       - name: Checkout Infra Repository
         uses: actions/checkout@v4
         with:
-          repository: polo-development/infrastructure
+          repository: mahir213/infrastructure
           ref: 'main'
           token: ${{ secrets.INFRASTRUCTURE_TOKEN }}
           path: infrastructure
